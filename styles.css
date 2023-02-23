@@ -1,7 +1,17 @@
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 #bio-text {
     display: none;
 }
 
 #projects-photo {
     display: none;
+}
+
+button {
+    border: none;
+    background-color: white;
 }
