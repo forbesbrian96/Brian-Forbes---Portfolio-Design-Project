@@ -13,41 +13,72 @@
 </head>
 
 <body>
-    
+
     <div class="overlay">
-        <nav>
-            <div id="home">
-                <button>home</button>
-            </div>
-            <div id="bio">
+        <ul class="nav">
+            <li id="home">
+                <button id="home-button">home</button>
+            </li>
+            <li id="bio">
                 <button id="bio-button">bio</button>
-                <div id="bio-text">
-                    <p style="text-indent: 25px;">
-                        My name is Brian Forbes. I am 26 years old, and extremely excited to have begun my journey into
-                        software engineering.
-                        Professionally, my background has focused in multiple fields; primarily sales, and logistics.
-                    </p>
-                    <p style="text-indent: 25px;">
-                        Before beginning the courses at General Assembly, I was a freight broker, for one of the largest
-                        logistics firms in North America. This position revolved around arranging door-to-door, global
-                        cargo
-                        transportation for my clients.
-                    </p>
-                    <p style="text-indent: 25px;">
-                        In my spare time, I'm also an actor, musician, and occasionally a model.
-                    </p>
+
+            </li>
+            <li id="projects">
+                <button id="projects-button">projects</button>
+
+            </li>
+            <li id="display-themes">
+                <button id="display-themes-button" class="dropdown-button">display themes</button>
+                <div id="dropdown" class="dropdown-content">
+                    <button id="night-mode">Night-Mode</button>
+                    <button id="ruby">Ruby</button>
+                    <button id="pastel">Pastel</button>
+                </div>
+            </li>
+        </ul>
+
+        <div class="center-display">
+            <div id="home-text">
+                <p style="text-indent: 25px; line-height: 2;">
+                    Thank you for viewing my first portfolio entry- the portfolio itself! It's a quick read, so please check out the tabs up top. Don't like how it looks? Hit 'display themes', and see if there's something better suited to your tastes.
+                </p>
+            </div>
+            <div id="bio-text" class="center-display">
+                <p style="text-indent: 25px; line-height: 2;">
+                    My name is Brian Forbes. I am 26 years old, and extremely excited to have begun my journey into
+                    software engineering.
+                    Professionally, my background has focused in multiple fields; primarily sales, and logistics.
+                </p>
+                <p style="text-indent: 25px; line-height: 2;">
+                    Before beginning the courses at General Assembly, I was a freight broker, for one of the largest
+                    logistics firms in North America. This position revolved around arranging door-to-door, global
+                    cargo
+                    transportation for my clients.
+                </p>
+                <p style="text-indent: 25px; line-height: 2;">
+                    In my spare time, I'm also an filmmaker, musician, and occasionally a model.
+                </p>
+                <div class="photo-row">
+                    <div class="bio-photo">
+                        <img src="Photos for Coding/IMG_2549.JPG">
+
+                    </div>
+                    <div class="bio-photo">
+                        <img src="Photos for Coding/IMG_9474.jpg">
+
+                    </div>
+                    <div class="bio-photo">
+                        <img src="Photos for Coding/IMG_1812.jpg">
+
+                    </div>
                 </div>
             </div>
-            <div id="projects">
-                <button id="projects-button">projects</button>
+            <div id="projects-photo-row" class="center-display">
                 <div id="projects-photo">
                     <img src="Photos for Coding/Project-Meme.jpg">
                 </div>
             </div>
-            <div id="display-themes">
-                <button>display themes</button>
-            </div>
-        </nav>
+        </div>
     </div>
 
 </body>
