@@ -1,3 +1,8 @@
+body {
+    background-color: rgba(230, 196, 32, 1);
+    font-family: 'Monsterrat', sans-serif;
+}
+
 .overlay {
     display: flex;
     flex-direction: column;
@@ -11,11 +16,15 @@
     margin: 0 auto;
     box-sizing: border-box;
     width: 80%;
-    background-color: rgba(58, 71, 225, 88);
+    background-color: rgba(230, 115, 25, 1);
     height: 4em;
     margin-bottom: 15px;
     border-radius: 3px;
     list-style-type: none;
+    box-shadow: 0px 8px 16px 0px rgba(153, 130, 17, .9);
+    position: fixed;
+    left: 0;
+    right: 0;
 }
 
 .center-display {
@@ -26,16 +35,12 @@
     margin: auto;
 }
 
-#home-button:hover, #home-button:focus {
-    background-color: red;
+#home-text {
+    padding: 180px;
 }
 
 #home-text {
     text-align: center;
-}
-
-#bio-button:hover, #bio-button:focus {
-    background-color: red;
 }
 
 #bio-text {
@@ -43,6 +48,7 @@
     flex-direction: column;
     width: 60%;
     margin: auto;
+    padding-top: 70px;
 }
 
 .photo-row {
@@ -54,6 +60,7 @@
     width: 90%;
     margin: 0 auto;
     gap: 25px;
+    padding-bottom: 70px;
     margin-bottom: 10px;
     flex: 1;
 }
@@ -63,12 +70,8 @@
     flex-direction: column;
     background-size: 100% auto;
     padding: 1rem 0;
-    width: 70%;
+    width: 56%;
     flex-grow: 1;
-}
-
-#projects-button:hover, #projects-button:focus {
-    background-color: red;
 }
 
 #projects-photo-row {
@@ -77,9 +80,11 @@
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
     gap: 25px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     margin-bottom: 10px;
 }
 
@@ -88,7 +93,6 @@
     flex-direction: column;
     background-size: 100% auto;
     padding: 1rem 0;
-    width: 50%;
     flex-grow: 1;
 }
 
@@ -97,36 +101,80 @@
     display: inline-block;
 }
 
-.dropdown-button:hover, .dropdown-button:focus {
-    background-color: red;
-}
-
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: rgba(43, 172, 229, 1);
     width: 100%;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(153, 130, 17, .9);
     z-index: 1;
 }
 
 .dropdown-content button {
     text-decoration: none;
     display: block;
-}
-
-.dropdown-content button:hover {
-    background-color: red;
+    width: 100%;
 }
 
 button {
     border: none;
-    background-color: rgba(58, 71, 225, 88);
-    color: white;
-    cursor: pointer; 
+    background-color: rgba(230, 115, 25, 1);
+    color: black;
+    cursor: pointer;
+}
+
+/* to change the background color of the button on hover, both hover and focus seem to be necessary */
+.nav-button:hover,
+.nav-button:focus {
+    background-color: rgba(43, 172, 229, 1);
+    border-radius: 3px;
+}
+
+.dropdown-content button:hover,
+.dropdown-content button:focus {
+    background-color: rgba(43, 172, 229, 1);
 }
 
 .show {
     display: block;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 80%;
+    background-color: rgba(153, 59, 44, 1);
+    height: 4em;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    list-style-type: none;
+    box-shadow: 0px 8px 16px 0px rgba(153, 130, 17, .9);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#footer-box {
+    display: flex;
+    width: 100px;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    background-size: 100% auto;
+    padding: 1rem 0;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.night-hover:hover, .night-hover:focus {
+    background-color: black;
+    color: white;
 }

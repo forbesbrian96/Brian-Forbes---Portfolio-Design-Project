@@ -1,86 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="app.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&display=swap");
+    </style>
     <title>Brian Forbes Portfolio Project</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="overlay">
-        <ul class="nav">
-            <li id="home">
-                <button id="home-button">home</button>
-            </li>
-            <li id="bio">
-                <button id="bio-button">bio</button>
+      <ul class="nav">
+        <li id="home">
+          <button id="home-button" class="nav-button">home</button>
+        </li>
+        <li id="bio">
+          <button id="bio-button" class="nav-button">bio</button>
+        </li>
+        <li id="projects">
+          <button id="projects-button" class="nav-button">projects</button>
+        </li>
+        <li id="display-themes">
+          <button id="display-themes-button" class="dropdown-button nav-button">
+            display themes
+          </button>
+          <div id="dropdown" class="dropdown-content">
+            <button id="night-mode">night-mode</button>
+            <button id="ruby">ruby</button>
+            <button id="pastel">pastel</button>
+            <button id="default">(default)</button>
+          </div>
+        </li>
+      </ul>
 
-            </li>
-            <li id="projects">
-                <button id="projects-button">projects</button>
-
-            </li>
-            <li id="display-themes">
-                <button id="display-themes-button" class="dropdown-button">display themes</button>
-                <div id="dropdown" class="dropdown-content">
-                    <button id="night-mode">Night-Mode</button>
-                    <button id="ruby">Ruby</button>
-                    <button id="pastel">Pastel</button>
-                </div>
-            </li>
-        </ul>
-
-        <div class="center-display">
-            <div id="home-text">
-                <p style="text-indent: 25px; line-height: 2;">
-                    Thank you for viewing my first portfolio entry- the portfolio itself! It's a quick read, so please check out the tabs up top. Don't like how it looks? Hit 'display themes', and see if there's something better suited to your tastes.
-                </p>
-            </div>
-            <div id="bio-text" class="center-display">
-                <p style="text-indent: 25px; line-height: 2;">
-                    My name is Brian Forbes. I am 26 years old, and extremely excited to have begun my journey into
-                    software engineering.
-                    Professionally, my background has focused in multiple fields; primarily sales, and logistics.
-                </p>
-                <p style="text-indent: 25px; line-height: 2;">
-                    Before beginning the courses at General Assembly, I was a freight broker, for one of the largest
-                    logistics firms in North America. This position revolved around arranging door-to-door, global
-                    cargo
-                    transportation for my clients.
-                </p>
-                <p style="text-indent: 25px; line-height: 2;">
-                    In my spare time, I'm also an filmmaker, musician, and occasionally a model.
-                </p>
-                <div class="photo-row">
-                    <div class="bio-photo">
-                        <img src="Photos for Coding/IMG_2549.JPG">
-
-                    </div>
-                    <div class="bio-photo">
-                        <img src="Photos for Coding/IMG_9474.jpg">
-
-                    </div>
-                    <div class="bio-photo">
-                        <img src="Photos for Coding/IMG_1812.jpg">
-
-                    </div>
-                </div>
-            </div>
-            <div id="projects-photo-row" class="center-display">
-                <div id="projects-photo">
-                    <img src="Photos for Coding/Project-Meme.jpg">
-                </div>
-            </div>
+      <div class="center-display">
+        <div id="home-text">
+          <p style="line-height: 2">
+            Thank you for viewing my first portfolio entry- the portfolio
+            itself! It's a quick read, so please check out the tabs up top.
+            Don't like how it looks?<br />
+            Hit 'display themes', and see if there's something better suited to
+            your tastes.
+          </p>
         </div>
+        <div id="bio-text" class="center-display">
+          <p style="text-indent: 25px; line-height: 2">
+            My name is Brian Forbes. I am 26 years old, and extremely excited to
+            have begun my journey into software engineering. Professionally, my
+            background has focused in multiple fields; primarily sales, and
+            logistics.
+          </p>
+          <p style="text-indent: 25px; line-height: 2">
+            Before beginning the courses at General Assembly, I was a freight
+            broker, for one of the largest logistics firms in North America.
+            This position revolved around arranging door-to-door, global cargo
+            transportation for my clients.
+          </p>
+          <p style="text-indent: 25px; line-height: 2">
+            In my spare time, I'm also a filmmaker, musician, and occasionally
+            a model.
+          </p>
+          <div class="photo-row">
+            <div class="bio-photo">
+              <img src="Photos for Coding/IMG_2549.JPG" />
+            </div>
+            <div class="bio-photo">
+              <img src="Photos for Coding/IMG_9474.jpg" />
+            </div>
+            <div class="bio-photo">
+              <img src="Photos for Coding/IMG_1812.jpg" />
+            </div>
+          </div>
+        </div>
+        <div id="projects-photo-row" class="center-display">
+          <div id="projects-photo">
+            <img src="Photos for Coding/Project-Meme.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div id="footer-box">
+          <a href="https://www.linkedin.com/in/brian-forbes-swe/"
+            ><img id="linkedin-lgo" src="Photos for Coding/linkedin-logo.png"
+          /></a>
+        </div>
+      </footer>
     </div>
-
-</body>
-
+  </body>
 </html>
