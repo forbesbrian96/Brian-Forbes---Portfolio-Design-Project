@@ -143,4 +143,14 @@ $(()=>{
   };
 
   $default.on("click", defaultTheme);
+
+  //custom
+
+  const $custom = $("#custom")
+
+  const customTheme = () => {
+
+  }
+
+  $custom.on("click", customTheme)
 })

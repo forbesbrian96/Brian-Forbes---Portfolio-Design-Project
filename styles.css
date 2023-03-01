@@ -136,8 +136,11 @@ button {
     background-color: rgba(43, 172, 229, 1);
 }
 
-.show {
-    display: block;
+#custom-modal {
+    display: none;
+    border: 1px solid black;
+    width: 4em;
+    height: 8em;
 }
 
 footer {
