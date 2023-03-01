@@ -154,7 +154,7 @@ $(()=>{
 
   //custom
 
-  const $custom = $("#custom")
+  const $custom = $("#custom-button")
   const $customModal = $("#custom-modal")
 
   const customThemeToggle = () => {
@@ -162,4 +162,28 @@ $(()=>{
   }
 
   $custom.on("click", customThemeToggle)
+
+  //custom color application
+
+  const $tColor = $("#tcolor")
+  const $bColor = $("#bcolor")
+  const $nbColor = $("#nbcolor")
+  const $fcolor = $("#fcolor")
+  const $applyButton =$("#apply")
+
+  const customApply = () => {
+    $("body").css("background-color", $bColor);
+    $("body").css("color", $tColor);
+    $(".nav").css("background-color", $nbColor);
+    $(".nav").css("box-shadow", "0px 8px 16px 0px #00000066");
+    $(".dropdown-content").css("box-shadow", "0px 8px 16px 0px #00000066");
+    $("button").css("background-color", "#e67319");
+    $("button").css("color", $tColor);
+    $("#custom-modal").css("background-color", $nbColor)
+    $("#custom-modal").css("box-shadow", "0px 8px 16px 0px #00000066");
+    $("footer").css("background-color", $fcolor);
+    $("footer").css("box-shadow", "0px 8px 16px 0px #00000066");
+  }
+
+  $applyButton.on("click", customApply)
 })
