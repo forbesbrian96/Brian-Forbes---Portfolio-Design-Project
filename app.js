@@ -60,6 +60,8 @@ $(()=>{
   const $nightMode = $("#night-mode");
 
   //LEARNING MOMENT: CANNOT USE RGBA COLORS IN .CSS, BUT HEX AND NAMES ARE FINE
+
+  //nightHover and Remove highlight text but not the background of the button as instructed
   const nightHover = () => {
     $("button").removeClass("nav-button")
     $("button").addClass("night-hover")
@@ -88,11 +90,6 @@ $(()=>{
   };
 
   $nightMode.on("click", nightMode);
-  //nightHover doesn't work
-  // $("button").on("hover", nightHover)
-
-  
-  
 
   //Ruby
   const $ruby = $("#ruby");
@@ -164,6 +161,7 @@ $(()=>{
   $custom.on("click", customThemeToggle)
 
   //custom color application
+  //Broken broken broken, bit off more than I could chew - Hitting the apply button WILL CRASH SITE
 
   const $tColor = $("#tcolor")
   const $bColor = $("#bcolor")
