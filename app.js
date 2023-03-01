@@ -77,6 +77,8 @@ $(()=>{
     $(".nav").css("box-shadow", "0px 8px 16px 0px #C0C0C0e6");
     $(".dropdown-content").css("box-shadow", "0px 8px 16px 0px #C0C0C0");
     $("button").css("background-color", "#C0C0C0");
+    $("#custom-modal").css("background-color", "#C0C0C0");
+    $("#custom-modal").css("box-shadow", "0px 8px 16px 0px #C0C0C0e6");
     $("footer").css("background-color", "#C0C0C0");
     $("footer").css("box-shadow", "0px 8px 16px 0px #C0C0C0e6");
     let nightBoolean = false
@@ -103,6 +105,8 @@ $(()=>{
     $(".dropdown-content").css("box-shadow", "0px 8px 16px 0px #6b0015e6");
     $("button").css("background-color", "#e10531");
     $("button").css("color", "white")
+    $("#custom-modal").css("background-color", "#e10531");
+    $("#custom-modal").css("box-shadow", "0px 8px 16px 0px #6b0015e6");
     $("footer").css("background-color", "#6b0015");
     $("footer").css("box-shadow", "0px 8px 16px 0px #6b0015e6");
   };
@@ -120,6 +124,8 @@ $(()=>{
     $(".dropdown-content").css("box-shadow", "0px 8px 16px 0px #d8d3e4");
     $("button").css("background-color", "#d8d3e4");
     $("button").css("color", "black")
+    $("#custom-modal").css("background-color", "#ecbcd7");
+    $("#custom-modal").css("box-shadow", "0px 8px 16px 0px #d8d3e4");
     $("footer").css("background-color", "#c5e9f1");
     $("footer").css("box-shadow", "0px 8px 16px 0px #d8d3e4");
   };
@@ -138,6 +144,8 @@ $(()=>{
     $(".dropdown-content").css("box-shadow", "0px 8px 16px 0px #998211e6");
     $("button").css("background-color", "#e67319");
     $("button").css("color", "black");
+    $("#custom-modal").css("background-color", "#e67319")
+    $("#custom-modal").css("box-shadow", "0px 8px 16px 0px #998211e6");
     $("footer").css("background-color", "#993b2c");
     $("footer").css("box-shadow", "0px 8px 16px 0px #998211e6");
   };
@@ -147,10 +155,11 @@ $(()=>{
   //custom
 
   const $custom = $("#custom")
+  const $customModal = $("#custom-modal")
 
-  const customTheme = () => {
-
+  const customThemeToggle = () => {
+    $customModal.toggle(250)
   }
 
-  $custom.on("click", customTheme)
+  $custom.on("click", customThemeToggle)
 })
