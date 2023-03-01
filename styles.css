@@ -36,11 +36,8 @@ body {
 }
 
 #home-text {
-    padding: 180px;
-}
-
-#home-text {
     text-align: center;
+    padding: 180px;
 }
 
 #bio-text {
@@ -187,4 +184,24 @@ a {
 .night-hover:hover, .night-hover:focus {
     background-color: black;
     color: white;
+}
+
+@media screen  and (max-width: 800px) {
+    .center-display {
+        margin: none;
+        padding: none;
+    }
+
+    #home-text {
+        padding: 50px;
+        padding-top: 100px;
+    }
+
+    #projects-photo {
+        width: 40%;
+    }
+
+    #custom-modal {
+        width: 40%;
+    }
 }
